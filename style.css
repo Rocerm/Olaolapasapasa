@@ -9,10 +9,9 @@
 :root {
   --primary-color: #B6CDE1;
   --secondary-color: #ffffff;
-  --bg-color: #f4f5f7;       
-  --text-main: #1a1a1a;     
-  --text-muted: #E4D1E6; 
-  --link-color: #8FDBF2;
+  --bg-color: #f4f5f7;
+  --text-main: #1a1a1a;
+  --text-muted: #596579;
 }
 
 .playfair-display-regular {
@@ -34,7 +33,7 @@ body {
 }
 
 nav {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   padding: 20px 40px;
   display: flex;
   gap: 20px;
@@ -42,7 +41,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: var(--link-color);
+  color: var(--secondary-color);
   font-size: 16px;
 }
 
@@ -76,7 +75,7 @@ nav a {
   padding: 25px;
   text-decoration: none;
   color: inherit;
-  border: 1px solid var(--text-muted);
+  border: 1px solid var(--primary-color);
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -93,4 +92,3 @@ nav a {
   color: var(--text-muted);
   margin: 0;
 }
-
