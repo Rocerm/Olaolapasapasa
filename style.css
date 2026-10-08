@@ -12,6 +12,9 @@
   --bg-color: #f4f5f7;
   --text-main: #1a1a1a;
   --text-muted: #596579;
+  --text-accent: #0875ed;
+  --text-algo: #BEFAD3;
+  --text-algo2: #CCCCCC;
 }
 
 .playfair-display-regular {
@@ -91,4 +94,80 @@ nav a {
   font-size: 15px;
   color: var(--text-muted);
   margin: 0;
+}
+
+
+
+
+header {
+  background-color: var(--primary-color);
+  padding: 16px 24px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+header a {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+main:not(.contenedor) {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.formulario-registro {
+  width: 100%;
+  max-width: 400px;
+}
+
+.formulario-registro h1 {
+  margin: 0 0 28px;
+  font-size: 30px;
+}
+
+.formulario-registro label {
+  display: block;
+  margin: 0 0 8px;
+  color: var(--text-muted);
+}
+
+.formulario-registro input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 12px 10px;
+  border: 1px solid var(--text-algo2);
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: var(--text-main);
+  font: inherit;
+}
+
+
+.formulario-registro button {
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  border-radius: 5px;
+  background-color: var(--text-accent);
+  color: var(--secondary-color);
+  font: inherit;
+  cursor: pointer;
+}
+
+.mensaje,
+.mensaje-exito {
+  max-width: 400px;
+  margin: 28px 0 0;
+  color: var(--text-algo);
+  font-weight: 700;
 }
