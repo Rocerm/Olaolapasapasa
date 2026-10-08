@@ -1,0 +1,96 @@
+/*ola este es una prueba de inteligencia de jose*/
+
+/*agregar esto al head de su html para q sirva la fuente plis*/
+
+/*<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">*/
+
+:root {
+  --primary-color: #B6CDE1;
+  --secondary-color: #ffffff;
+  --bg-color: #f4f5f7;       
+  --text-main: #1a1a1a;     
+  --text-muted: #E4D1E6; 
+  --link-color: #8FDBF2;
+}
+
+.playfair-display-regular {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: var(--secondary-color);
+  padding: 20px 40px;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-size: 16px;
+}
+
+
+.contenedor {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.contenedor h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contenedor p {
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}
+
+
+.talleres {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.tarjeta {
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  padding: 25px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tarjeta h2 {
+  font-size: 22px;
+  margin: 0;
+  color: var(--text-main);
+}
+
+.tarjeta p {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
